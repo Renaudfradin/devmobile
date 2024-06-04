@@ -1,14 +1,10 @@
 pluginManagement {
     repositories {
-        google {
-            content {
-                includeGroupByRegex("com\\.android.*")
-                includeGroupByRegex("com\\.google.*")
-                includeGroupByRegex("androidx.*")
-            }
-        }
+        google()
         mavenCentral()
         gradlePluginPortal()
+
+
     }
 }
 dependencyResolutionManagement {
@@ -16,8 +12,11 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        // add additional repository
+        maven ( "https://jitpack.io" )
     }
 }
 
-rootProject.name = "Scoop_app"
+rootProject.name = "News App"
 include(":app")
+ 
