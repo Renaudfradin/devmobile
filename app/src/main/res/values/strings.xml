@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">NewsProject</string>
+    <string name="news_api_key">d0f6761ab048410d827c37fc785e3be5</string>
+</resources>
